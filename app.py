@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import joblib
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
